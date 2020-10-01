@@ -1,68 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50873" started-at="2020-09-30T15:46:15Z" finished-at="2020-09-30T15:47:06Z">
+  <suite name="Suite" duration-ms="5857" started-at="2020-10-01T11:20:24Z" finished-at="2020-10-01T11:20:29Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@59717824]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="50873" started-at="2020-09-30T15:46:15Z" finished-at="2020-09-30T15:47:06Z">
+    <test name="Test" duration-ms="5857" started-at="2020-10-01T11:20:24Z" finished-at="2020-10-01T11:20:29Z">
       <class name="testRunner.RunTesterClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunTesterClass@59717824]" name="setUpClass" is-config="true" duration-ms="588" started-at="2020-09-30T21:16:15Z" finished-at="2020-09-30T21:16:16Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="setUpClass" is-config="true" duration-ms="807" started-at="2020-10-01T16:50:24Z" finished-at="2020-10-01T16:50:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@59717824]" name="runScenario" duration-ms="16294" started-at="2020-09-30T21:16:16Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:16:32Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="3964" started-at="2020-10-01T16:50:24Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-01T16:50:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To check if get error message upon entering wrong city name"]]>
+                <![CDATA["To check if weather data is present for the provided input city"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Weather data Testing Scenarios"]]>
+                <![CDATA["Weather data Testing Scenarios for Services"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@59717824]" name="runScenario" duration-ms="15014" started-at="2020-09-30T21:16:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:16:47Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="852" started-at="2020-10-01T16:50:28Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-01T16:50:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To check if get error message upon entering wrong city name"]]>
+                <![CDATA["To check if weather data is present for the provided input city"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Weather data Testing Scenarios"]]>
+                <![CDATA["Weather data Testing Scenarios for Services"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@59717824]" name="runScenario" duration-ms="18760" started-at="2020-09-30T21:16:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:17:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To check if get error message upon entering wrong city name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Weather data Testing Scenarios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunTesterClass@59717824]" name="tearDownClass" is-config="true" duration-ms="188" started-at="2020-09-30T21:17:06Z" finished-at="2020-09-30T21:17:06Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="tearDownClass" is-config="true" duration-ms="202" started-at="2020-10-01T16:50:29Z" finished-at="2020-10-01T16:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

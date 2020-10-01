@@ -1,21 +1,21 @@
-@RegressionSuite
+@RegressionSuite  @UITest
 Feature: Weather data Testing Scenarios
 
-#@Test1   @positive
-#Scenario Outline: To check if weather data is present for the provided input city
-#Given Launch website "<url>"
-#When Enter city name "<city>"
-#Then verify if weather data is displayed
-#
-#Examples:
-#|url|city|
-#|url|Pune|
-#|url|Nagpur|
-#|url|Kolkata|
+@Test1   @positive
+Scenario Outline: To check if weather data is present for the provided input city
+Given Launch website "<url>"
+When Enter city name "<city>"
+Then verify if weather data is displayed
+
+Examples:
+|url|city|
+|url|Pune|
+|url|Nagpur|
+|url|Kolkata|
 
 
 
-@Test2  @negative
+@UiTest2  @negative
 Scenario Outline: To check if get error message upon entering wrong city name
 Given Launch website "<url>"
 When Enter city name "<city>"

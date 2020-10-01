@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		
-		features = "C:\\Bench\\WeatherReportingComparator\\src\\test\\java\\features\\WeatherComparator.feature",
+		features = "C:\\Bench\\WeatherReportingComparator\\src\\test\\java\\features\\ServiceWeatherComparator.feature",
 				glue = "stepDefinitions",
 				
 		

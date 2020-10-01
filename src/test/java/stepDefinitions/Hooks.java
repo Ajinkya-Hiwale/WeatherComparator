@@ -35,7 +35,7 @@ public class Hooks extends TestBase{
 	Scenario scenario;
 	public TestBase testbase;
 
-	@Before 
+	@Before("@UITest")
 	public void setUP(Scenario scenario) throws Throwable {
 
 		getDriver();
@@ -46,7 +46,7 @@ public class Hooks extends TestBase{
 
 	}
 
-	@After
+	@After("@UITest")
 	public void tearDown() {
 //		scenario.write("End of the test");
 //		//if (Scenario.isFailed())

@@ -3,87 +3,53 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-30T15:46:16.245Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6873000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "To check if get error message upon entering wrong city name",
+        "start_timestamp": "2020-10-01T11:20:25.064Z",
+        "line": 11,
+        "name": "To check if weather data is present for the provided input city",
         "description": "",
-        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1446000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.tearDown()"
-            }
-          }
-        ],
+        "id": "weather-data-testing-scenarios-for-services;to-check-if-weather-data-is-present-for-the-provided-input-city;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7275000000,
+              "duration": 3652000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "Launch website \"url\"",
+            "line": 6,
+            "name": "Calling Weather API to get weather details \"baseURI\",\"endPoint\",\"apiKey\",\"Pune\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"url\"",
-                  "offset": 15
+                  "val": "\"baseURI\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"endPoint\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"apiKey\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Pune\"",
+                  "offset": 73
                 }
               ],
-              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
+              "location": "stepDefinitions.ServicesWeatherStpeDef.calling_Weather_API_to_get_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 308000000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "Enter city name \"Amt\"",
+            "line": 7,
+            "name": "Verify if weather data is getting fetched from the API",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Amt\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 170000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"errormsg_for_wrong_cityname\"",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
+              "location": "stepDefinitions.ServicesWeatherStpeDef.verify_if_weather_data_is_getting_fetched_from_the_API()"
             },
             "keyword": "Then "
           }
@@ -93,95 +59,67 @@
             "name": "@RegressionSuite"
           },
           {
-            "name": "@Test2"
+            "name": "@SeriveTest1"
           },
           {
-            "name": "@negative"
+            "name": "@positive"
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-30T15:46:32.360Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6143000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "To check if get error message upon entering wrong city name",
+        "start_timestamp": "2020-10-01T11:20:28.809Z",
+        "line": 22,
+        "name": "To check if weather data is present for the provided input city",
         "description": "",
-        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 919000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.tearDown()"
-            }
-          }
-        ],
+        "id": "weather-data-testing-scenarios-for-services;to-check-if-weather-data-is-present-for-the-provided-input-city;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7683000000,
+              "duration": 818000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "Launch website \"url\"",
+            "line": 17,
+            "name": "Calling Weather API to get weather details \"baseURI\",\"endPoint\",\"apiKey\",\"Pune\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"url\"",
-                  "offset": 15
+                  "val": "\"baseURI\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"endPoint\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"apiKey\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"Pune\"",
+                  "offset": 73
                 }
               ],
-              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
+              "location": "stepDefinitions.ServicesWeatherStpeDef.calling_Weather_API_to_get_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 33000000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "Enter city name \"Arvi\"",
+            "line": 18,
+            "name": "Verify status code should be \"200\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Arvi\"",
-                  "offset": 16
+                  "val": "\"200\"",
+                  "offset": 29
                 }
               ],
-              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 83000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"errormsg_for_wrong_cityname\"",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
+              "location": "stepDefinitions.ServicesWeatherStpeDef.verify_status_code_should_be(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -191,117 +129,19 @@
             "name": "@RegressionSuite"
           },
           {
-            "name": "@Test2"
+            "name": "@SeriveTest2"
           },
           {
-            "name": "@negative"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-30T15:46:47.362Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6685000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "To check if get error message upon entering wrong city name",
-        "description": "",
-        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 935000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 10827000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Launch website \"url\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"url\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 163000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Enter city name \"Ashtii\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ashtii\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 137000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"errormsg_for_wrong_cityname\"",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RegressionSuite"
-          },
-          {
-            "name": "@Test2"
-          },
-          {
-            "name": "@negative"
+            "name": "@positive"
           }
         ]
       }
     ],
-    "name": "Weather data Testing Scenarios",
+    "name": "Weather data Testing Scenarios for Services",
     "description": "",
-    "id": "weather-data-testing-scenarios",
+    "id": "weather-data-testing-scenarios-for-services",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/WeatherComparator.feature",
+    "uri": "file:src/test/java/features/ServiceWeatherComparator.feature",
     "tags": [
       {
         "name": "@RegressionSuite",

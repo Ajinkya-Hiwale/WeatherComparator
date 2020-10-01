@@ -17,10 +17,10 @@ import org.testng.Assert;
 
 import baseClass.TestBase;
 
-import stepDefinitions.CommonMethods;
+import stepDefinitions.Utility;
 import stepDefinitions.Hooks;
 
-public class UiComparator extends CommonMethods {
+public class UiComparator extends Utility {
 
 	WebDriver driver;
 	LinkedHashMap<String, String> data = new LinkedHashMap();

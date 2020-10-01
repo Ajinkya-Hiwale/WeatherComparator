@@ -22,8 +22,7 @@ public class ComparatorStepDef {
 	public void launch_website(String url) throws InterruptedException {
 
 		ui.getUrl(TestBase.getPropertyValue(url));
-		// Thread.sleep(10000);
-
+		
 	}
 
 	@When("Enter city name {string}")
