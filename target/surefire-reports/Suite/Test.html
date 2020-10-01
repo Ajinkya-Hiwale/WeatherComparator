@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 30 21:09:16 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>54 seconds (54929 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check if get error message upon entering wrong city name", "Weather data Testing Scenarios"</td>
+<td><div><pre>java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+	at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+	at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+	at ?.verify error message when city is not valid &quot;errormsg_for_wrong_cityname&quot;(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace552674617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace552674617'><pre>java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+	at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+	at ?.verify error message when city is not valid &quot;errormsg_for_wrong_cityname&quot;(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+</pre></div></td>
+<td>24</td>
+<td>testRunner.RunTesterClass@23e028a9</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check if get error message upon entering wrong city name", "Weather data Testing Scenarios"</td>
+<td><div><pre>java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+	at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+	at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+	at ?.verify error message when city is not valid &quot;errormsg_for_wrong_cityname&quot;(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807176280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807176280'><pre>java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+	at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+	at ?.verify error message when city is not valid &quot;errormsg_for_wrong_cityname&quot;(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+</pre></div></td>
+<td>15</td>
+<td>testRunner.RunTesterClass@23e028a9</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check if get error message upon entering wrong city name", "Weather data Testing Scenarios"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-42M9JTP&apos;, ip: &apos;192.168.43.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x005C87E3+2852835]
+	Ordinal0 [0x004B5BB1+1727409]
+	Ordinal0 [0x0038E362+516962]
+	Ordinal0 [0x00387D82+490882]
+	Ordinal0 [0x0038846B+492651]
+	Ordinal0 [0x003893C5+496581]
+	Ordinal0 [0x00384D64+478564]
+	Ordinal0 [0x0038F300+520960]
+	Ordinal0 [0x0033E489+189577]
+	Ordinal0 [0x0033D7FD+186365]
+	Ordinal0 [0x0033B70B+177931]
+	Ordinal0 [0x00322584+75140]
+	Ordinal0 [0x00323650+79440]
+	Ordinal0 [0x003235E9+79337]
+	Ordinal0 [0x004CAD5C+1813852]
+	GetHandleVerifier [0x006EC616+1075574]
+	GetHandleVerifier [0x006EC367+1074887]
+	GetHandleVerifier [0x006F7497+1120247]
+	GetHandleVerifier [0x006ECC16+1077110]
+	Ordinal0 [0x004C3206+1782278]
+	Ordinal0 [0x004CC3BB+1819579]
+	Ordinal0 [0x004CC523+1819939]
+	Ordinal0 [0x004E2B45+1911621]
+	BaseThreadInitThunk [0x76F06359+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77047BF4+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at baseClass.TestBase.getDriver(TestBase.java:50)
+	at stepDefinitions.Hooks.setUP(Hooks.java:41)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1155757579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1155757579'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-42M9JTP&apos;, ip: &apos;192.168.43.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x005C87E3+2852835]
+	Ordinal0 [0x004B5BB1+1727409]
+	Ordinal0 [0x0038E362+516962]
+	Ordinal0 [0x00387D82+490882]
+	Ordinal0 [0x0038846B+492651]
+	Ordinal0 [0x003893C5+496581]
+	Ordinal0 [0x00384D64+478564]
+	Ordinal0 [0x0038F300+520960]
+	Ordinal0 [0x0033E489+189577]
+	Ordinal0 [0x0033D7FD+186365]
+	Ordinal0 [0x0033B70B+177931]
+	Ordinal0 [0x00322584+75140]
+	Ordinal0 [0x00323650+79440]
+	Ordinal0 [0x003235E9+79337]
+	Ordinal0 [0x004CAD5C+1813852]
+	GetHandleVerifier [0x006EC616+1075574]
+	GetHandleVerifier [0x006EC367+1074887]
+	GetHandleVerifier [0x006F7497+1120247]
+	GetHandleVerifier [0x006ECC16+1077110]
+	Ordinal0 [0x004C3206+1782278]
+	Ordinal0 [0x004CC3BB+1819579]
+	Ordinal0 [0x004CC523+1819939]
+	Ordinal0 [0x004E2B45+1911621]
+	BaseThreadInitThunk [0x76F06359+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77047BF4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at baseClass.TestBase.getDriver(TestBase.java:50)
+	at stepDefinitions.Hooks.setUP(Hooks.java:41)
+</pre></div></td>
+<td>13</td>
+<td>testRunner.RunTesterClass@23e028a9</td></tr>
+</table><p>
+</body>
+</html>

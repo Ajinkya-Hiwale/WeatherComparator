@@ -1,0 +1,316 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-30T15:46:16.245Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6873000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "To check if get error message upon entering wrong city name",
+        "description": "",
+        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1446000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7275000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Launch website \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter city name \"Amt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amt\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"errormsg_for_wrong_cityname\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionSuite"
+          },
+          {
+            "name": "@Test2"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T15:46:32.360Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6143000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "To check if get error message upon entering wrong city name",
+        "description": "",
+        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 919000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7683000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Launch website \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter city name \"Arvi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arvi\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"errormsg_for_wrong_cityname\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionSuite"
+          },
+          {
+            "name": "@Test2"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-30T15:46:47.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6685000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "To check if get error message upon entering wrong city name",
+        "description": "",
+        "id": "weather-data-testing-scenarios;to-check-if-get-error-message-upon-entering-wrong-city-name;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 935000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10827000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Launch website \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.launch_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter city name \"Ashtii\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ashtii\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.enter_city_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify error message when city is not valid \"errormsg_for_wrong_cityname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"errormsg_for_wrong_cityname\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionSuite"
+          },
+          {
+            "name": "@Test2"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "Weather data Testing Scenarios",
+    "description": "",
+    "id": "weather-data-testing-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/WeatherComparator.feature",
+    "tags": [
+      {
+        "name": "@RegressionSuite",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="54929" started-at="2020-09-30T21:09:16 IST" finished-at="2020-09-30T21:10:10 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="54929" started-at="2020-09-30T21:09:16 IST" finished-at="2020-09-30T21:10:10 IST">
+      <class name="testRunner.RunTesterClass">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="setUpClass" is-config="true" duration-ms="580" started-at="2020-09-30T21:09:16 IST" finished-at="2020-09-30T21:09:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="runScenario" duration-ms="24317" started-at="2020-09-30T21:09:16 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:09:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check if get error message upon entering wrong city name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Weather data Testing Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+at ✽.verify error message when city is not valid "errormsg_for_wrong_cityname"(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="runScenario" duration-ms="15779" started-at="2020-09-30T21:09:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:09:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check if get error message upon entering wrong city name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Weather data Testing Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [errormsg_for_wrong_cityname] but found [No Record Found, Try again.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.UiComparator.getNoRecordMessage(UiComparator.java:88)
+at stepDefinitions.ComparatorStepDef.verify_error_message_when_city_is_not_valid(ComparatorStepDef.java:45)
+at ✽.verify error message when city is not valid "errormsg_for_wrong_cityname"(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/WeatherComparator.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="runScenario" duration-ms="13849" started-at="2020-09-30T21:09:56 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:10:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check if get error message upon entering wrong city name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Weather data Testing Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-42M9JTP', ip: '192.168.43.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x005C87E3+2852835]
+Ordinal0 [0x004B5BB1+1727409]
+Ordinal0 [0x0038E362+516962]
+Ordinal0 [0x00387D82+490882]
+Ordinal0 [0x0038846B+492651]
+Ordinal0 [0x003893C5+496581]
+Ordinal0 [0x00384D64+478564]
+Ordinal0 [0x0038F300+520960]
+Ordinal0 [0x0033E489+189577]
+Ordinal0 [0x0033D7FD+186365]
+Ordinal0 [0x0033B70B+177931]
+Ordinal0 [0x00322584+75140]
+Ordinal0 [0x00323650+79440]
+Ordinal0 [0x003235E9+79337]
+Ordinal0 [0x004CAD5C+1813852]
+GetHandleVerifier [0x006EC616+1075574]
+GetHandleVerifier [0x006EC367+1074887]
+GetHandleVerifier [0x006F7497+1120247]
+GetHandleVerifier [0x006ECC16+1077110]
+Ordinal0 [0x004C3206+1782278]
+Ordinal0 [0x004CC3BB+1819579]
+Ordinal0 [0x004CC523+1819939]
+Ordinal0 [0x004E2B45+1911621]
+BaseThreadInitThunk [0x76F06359+25]
+RtlGetAppContainerNamedObjectPath [0x77047C24+228]
+RtlGetAppContainerNamedObjectPath [0x77047BF4+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-42M9JTP', ip: '192.168.43.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x005C87E3+2852835]
+Ordinal0 [0x004B5BB1+1727409]
+Ordinal0 [0x0038E362+516962]
+Ordinal0 [0x00387D82+490882]
+Ordinal0 [0x0038846B+492651]
+Ordinal0 [0x003893C5+496581]
+Ordinal0 [0x00384D64+478564]
+Ordinal0 [0x0038F300+520960]
+Ordinal0 [0x0033E489+189577]
+Ordinal0 [0x0033D7FD+186365]
+Ordinal0 [0x0033B70B+177931]
+Ordinal0 [0x00322584+75140]
+Ordinal0 [0x00323650+79440]
+Ordinal0 [0x003235E9+79337]
+Ordinal0 [0x004CAD5C+1813852]
+GetHandleVerifier [0x006EC616+1075574]
+GetHandleVerifier [0x006EC367+1074887]
+GetHandleVerifier [0x006F7497+1120247]
+GetHandleVerifier [0x006ECC16+1077110]
+Ordinal0 [0x004C3206+1782278]
+Ordinal0 [0x004CC3BB+1819579]
+Ordinal0 [0x004CC523+1819939]
+Ordinal0 [0x004E2B45+1911621]
+BaseThreadInitThunk [0x76F06359+25]
+RtlGetAppContainerNamedObjectPath [0x77047C24+228]
+RtlGetAppContainerNamedObjectPath [0x77047BF4+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at baseClass.TestBase.getDriver(TestBase.java:50)
+at stepDefinitions.Hooks.setUP(Hooks.java:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunTesterClass@23e028a9]" name="tearDownClass" is-config="true" duration-ms="330" started-at="2020-09-30T21:10:10 IST" finished-at="2020-09-30T21:10:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.RunTesterClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

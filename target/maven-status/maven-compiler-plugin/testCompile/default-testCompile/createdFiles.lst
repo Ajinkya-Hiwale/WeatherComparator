@@ -1,0 +1,6 @@
+stepDefinitions\CommonMethods.class
+stepDefinitions\Hooks.class
+testRunner\RunTesterClass.class
+pages\UiComparator.class
+baseClass\TestBase.class
+stepDefinitions\ComparatorStepDef.class
