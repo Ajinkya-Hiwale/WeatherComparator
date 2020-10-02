@@ -52,7 +52,7 @@ public class ComparatorUIandServiceStepDef {
 	@When("Call Weather API and fetch all the weather details {string},{string},{string},{string}")
 	public void call_Weather_API_and_fetch_all_the_weather_details(String baseuri, String endPoint, String apikeyy,
 			String cityy) throws JsonMappingException, JsonProcessingException {
-		//log.info("Setting up data to hit weather web service");
+		log.info("Setting up data to hit weather web service");
 		baseURI = TestBase.getPropertyValue(baseuri);
 		endpoint = TestBase.getPropertyValue(endPoint);
 		apikey = TestBase.getPropertyValue(apikeyy);
