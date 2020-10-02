@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55863" started-at="2020-10-02T01:11:02Z" finished-at="2020-10-02T01:11:57Z">
+  <suite name="Suite" duration-ms="292034" started-at="2020-10-02T06:47:15Z" finished-at="2020-10-02T06:52:07Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="55863" started-at="2020-10-02T01:11:02Z" finished-at="2020-10-02T01:11:57Z">
+    <test name="Test" duration-ms="292034" started-at="2020-10-02T06:47:15Z" finished-at="2020-10-02T06:52:07Z">
       <class name="testRunner.RunTesterClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="setUpClass" is-config="true" duration-ms="1216" started-at="2020-10-02T06:41:02Z" finished-at="2020-10-02T06:41:03Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="setUpClass" is-config="true" duration-ms="750" started-at="2020-10-02T12:17:15Z" finished-at="2020-10-02T12:17:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="runScenario" duration-ms="26602" started-at="2020-10-02T06:41:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T06:41:29Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="27181" started-at="2020-10-02T12:17:16Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:17:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Comparing City from UI with City received from Service with provided variance"]]>
+                <![CDATA["Comparing Temperature from UI with Temprature received from Service with provided variance"]]>
               </value>
             </param>
             <param index="1">
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="runScenario" duration-ms="14097" started-at="2020-10-02T06:41:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T06:41:44Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="18575" started-at="2020-10-02T12:17:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:18:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Comparing City from UI with City received from Service with provided variance"]]>
+                <![CDATA["Comparing Temperature from UI with Temprature received from Service with provided variance"]]>
               </value>
             </param>
             <param index="1">
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="runScenario" duration-ms="13605" started-at="2020-10-02T06:41:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T06:41:57Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="25011" started-at="2020-10-02T12:18:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:18:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Comparing City from UI with City received from Service with provided variance"]]>
+                <![CDATA["Comparing Temperature from UI with Temprature received from Service with provided variance"]]>
               </value>
             </param>
             <param index="1">
@@ -62,7 +62,197 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunTesterClass@1b956cfa]" name="tearDownClass" is-config="true" duration-ms="271" started-at="2020-10-02T06:41:57Z" finished-at="2020-10-02T06:41:57Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="22730" started-at="2020-10-02T12:18:26Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:18:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing City from UI with City received from Service"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="17609" started-at="2020-10-02T12:18:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:19:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing City from UI with City received from Service"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="17943" started-at="2020-10-02T12:19:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:19:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing City from UI with City received from Service"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="20887" started-at="2020-10-02T12:19:25Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:19:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Humidity from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="18464" started-at="2020-10-02T12:19:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:20:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Humidity from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="15236" started-at="2020-10-02T12:20:04Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:20:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Humidity from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="16497" started-at="2020-10-02T12:20:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:20:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Weather condition from UI with Weather condition received from Service"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Weather condition is not matching Expected is [CLOUDS]  Actual is Mostly Cloudy  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Weather condition is not matching Expected is [CLOUDS]  Actual is Mostly Cloudy  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_weather_condition_retrived_from_UI_and_Service_is_matching(ComparatorUIandServiceStepDef.java:95)
+	at ✽.verify if the weather condition retrived from UI and Service is matching(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/ComparatorUIandService.feature:56)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="18882" started-at="2020-10-02T12:20:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:20:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Weather condition from UI with Weather condition received from Service"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="20268" started-at="2020-10-02T12:20:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:21:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Wind Speed from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="32602" started-at="2020-10-02T12:21:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:21:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Wind Speed from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="runScenario" duration-ms="18869" started-at="2020-10-02T12:21:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-02T12:22:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Comparing Wind Speed from UI with Humidity received from Service with provided variance"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare Data received from UI and response received from Service"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.RunTesterClass@62e136d3]" name="tearDownClass" is-config="true" duration-ms="488" started-at="2020-10-02T12:22:06Z" finished-at="2020-10-02T12:22:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

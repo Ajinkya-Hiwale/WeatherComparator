@@ -13,12 +13,7 @@ public class CompareUIandServiceData {
 	
 	
 	
-	/*int count=jsonpath.getInt("courses.size()")
-			for(int i=0;i<count;i++)
-			{
-			 jsonpath.get("courses["+i+"].title") 
-			 jsonpath.get("courses["+i+"].prize")
-			}*/
+	
 	
 public double getTemepartureFromResponse(String response)
 {
@@ -27,12 +22,35 @@ public double getTemepartureFromResponse(String response)
 	
 }
 
+public double getHumidityFromResponse(String response)
+{
+	jsonpath=new JsonPath(response);
+	return jsonpath.getDouble("main.humidity");
+	
+}
+
+
+public double getWindSpeedFomResponse(String response)
+{
+	jsonpath=new JsonPath(response);
+	return jsonpath.getDouble("wind.speed");
+	
+}
+
+public String getWeatherConditionFromResponse(String response)
+{
+	jsonpath=new JsonPath(response);
+	return jsonpath.getString("weather.main");
+	
+}
+
 
 public void varianceLogic(double uitemp,double servicetemp,String variance)
 {
-	if(!(Integer.parseInt(variance) >(servicetemp-uitemp)))
+	if(!(Integer.parseInt(variance) >Math.abs(servicetemp-uitemp)))
 	{
 		Assert.assertTrue(false, "Temperature variance between UI and Service more than "+Integer.parseInt(variance)+"  ");
+		
 	}
 
 }

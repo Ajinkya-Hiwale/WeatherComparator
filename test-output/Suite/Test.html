@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 02 06:41:02 IST 2020</td>
+<td>Started on:</td><td>Fri Oct 02 12:17:15 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55863 ms)</td>
+<tr><td>Total time:</td><td>292 seconds (292034 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,29 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Weather condition from UI with Weather condition received from Service", "Compare Data received from UI and response received from Service"</td>
+<td><div><pre>java.lang.AssertionError: Weather condition is not matching Expected is [CLOUDS]  Actual is Mostly Cloudy  expected [true] but found [false]
+	at stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_weather_condition_retrived_from_UI_and_Service_is_matching(ComparatorUIandServiceStepDef.java:95)
+	at ?.verify if the weather condition retrived from UI and Service is matching(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/ComparatorUIandService.feature:56)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace791563230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791563230'><pre>java.lang.AssertionError: Weather condition is not matching Expected is [CLOUDS]  Actual is Mostly Cloudy  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_weather_condition_retrived_from_UI_and_Service_is_matching(ComparatorUIandServiceStepDef.java:95)
+	at ?.verify if the weather condition retrived from UI and Service is matching(file:///C:/Bench/WeatherReportingComparator/src/test/java/features/ComparatorUIandService.feature:56)
+</pre></div></td>
+<td>16</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +98,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Temperature from UI with Temprature received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
 <td></td>
-<td>26</td>
-<td>testRunner.RunTesterClass@1b956cfa</td></tr>
+<td>27</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
 <tr>
-<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Temperature from UI with Temprature received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
 <td></td>
-<td>14</td>
-<td>testRunner.RunTesterClass@1b956cfa</td></tr>
+<td>18</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
 <tr>
-<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Temperature from UI with Temprature received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
 <td></td>
-<td>13</td>
-<td>testRunner.RunTesterClass@1b956cfa</td></tr>
+<td>25</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>22</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing City from UI with City received from Service", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>17</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Humidity from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Humidity from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Humidity from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>15</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Weather condition from UI with Weather condition received from Service", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Wind Speed from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>20</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Wind Speed from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>32</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
+<tr>
+<td title='testRunner.RunTesterClass.runScenario()'><b>runScenario</b><br>Test class: testRunner.RunTesterClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Comparing Wind Speed from UI with Humidity received from Service with provided variance", "Compare Data received from UI and response received from Service"</td>
+<td></td>
+<td>18</td>
+<td>testRunner.RunTesterClass@62e136d3</td></tr>
 </table><p>
 </body>
 </html>

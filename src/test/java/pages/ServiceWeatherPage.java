@@ -45,16 +45,9 @@ public class ServiceWeatherPage {
 			    .get(endpoint).then().extract().response();
 		return res;
 
-		// WeatherResponse we=utility.unmarshallingResponse(res,WeatherResponse.class);
-		// System.out.println("City Name: "+we.getName());
-
+		
 	}
 
-	public static void main(String[] args) throws JsonMappingException, JsonProcessingException {
-		// io.restassured.response.Response res=new
-		// ServiceWeatherPage().weatherRequest("https://api.openweathermap.org",
-		// "7fe67bf08c80ded756e598d6f8fedaea", "Pune", "/data/2.5/weather");
-		// System.out.println(res.getBody().asString());
-	}
+	
 
 }

@@ -19,29 +19,10 @@ import io.cucumber.core.internal.gherkin.deps.com.google.gson.Gson;
 public class Utility {
 
 	
-	/*
-	 * 
-	 * Below method used to generate different string every time when it gets called
-	 * that is used to provide differnt name to title,Sku and Description 
-	 * 
-	 */
+	
 	//public WebDriver driver;
 	
-	public double celciusToKelvin(int a)
-	{
-		return a+273.15;
-	}
 	
-	
-	public static String uniqueElement()
-	{
-		UUID uuid=UUID.randomUUID();
-		String randomUUIDString =uuid.toString();
-		String element=randomUUIDString.substring(randomUUIDString.length()-5,randomUUIDString.length());
-				
-		return "TEST"+element;
-		
-	}
 	
 	public boolean isAlertPresent(WebDriver driver) 
 	{ 
@@ -54,6 +35,16 @@ public class Utility {
 	    { 
 	        return false; 
 	    }   // catch 
+	}
+	
+	public double celciusToKelvin(int a)
+	{
+		return a+273.15;
+	}
+	
+	public double meterPerSecondToKPH(int a)
+	{
+		return a*3.6;
 	}
 	
 	public void javaScriptExecutorClick(WebDriver driver,WebElement ele)
