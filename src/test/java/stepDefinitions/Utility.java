@@ -27,6 +27,12 @@ public class Utility {
 	 */
 	//public WebDriver driver;
 	
+	public double celciusToKelvin(int a)
+	{
+		return a+273.15;
+	}
+	
+	
 	public static String uniqueElement()
 	{
 		UUID uuid=UUID.randomUUID();

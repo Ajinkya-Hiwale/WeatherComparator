@@ -83,6 +83,9 @@ public class UiComparator extends Utility {
 		}
 	}
 	
+	
+	
+	
 	public void getNoRecordMessage(String errormsg)
 	{
 		System.out.println(norecordmsg.getText());

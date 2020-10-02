@@ -14,9 +14,10 @@ import pages.UiComparator;
 
 public class ComparatorStepDef {
 
-	String City;
+	String city1;
 
 	UiComparator ui = new UiComparator();
+	
 
 	@Given("Launch website {string}")
 	public void launch_website(String url) throws InterruptedException {
@@ -27,14 +28,14 @@ public class ComparatorStepDef {
 
 	@When("Enter city name {string}")
 	public void enter_city_name(String city) throws InterruptedException {
-		City = city;
-		ui.enterCity(city);
+		city1 = city;
+		ui.enterCity(TestBase.getPropertyValue(city));
 
 	}
 
 	@Then("verify if weather data is displayed")
 	public void verify_if_weather_data_is_displayed() throws InterruptedException {
-		LinkedHashMap<String, String> weathermap = ui.getWeatherData(City);
+		LinkedHashMap<String, String> weathermap = ui.getWeatherData(TestBase.getPropertyValue(city1));
 		ui.verifyWeatherData(weathermap);
 
 	}

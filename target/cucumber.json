@@ -3,53 +3,109 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-01T11:20:25.064Z",
-        "line": 11,
-        "name": "To check if weather data is present for the provided input city",
+        "start_timestamp": "2020-10-02T01:11:03.690Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7525000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Comparing City from UI with City received from Service with provided variance",
         "description": "",
-        "id": "weather-data-testing-scenarios-for-services;to-check-if-weather-data-is-present-for-the-provided-input-city;;2",
+        "id": "compare-data-received-from-ui-and-response-received-from-service;comparing-city-from-ui-with-city-received-from-service-with-provided-variance;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 951000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3652000000,
+              "duration": 8342000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Calling Weather API to get weather details \"baseURI\",\"endPoint\",\"apiKey\",\"Pune\"",
+            "line": 23,
+            "name": "Launch NDTV weather website \"url\" and enter city \"city1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"baseURI\"",
-                  "offset": 43
+                  "val": "\"url\"",
+                  "offset": 28
                 },
                 {
-                  "val": "\"endPoint\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"apiKey\"",
-                  "offset": 64
-                },
-                {
-                  "val": "\"Pune\"",
-                  "offset": 73
+                  "val": "\"city1\"",
+                  "offset": 49
                 }
               ],
-              "location": "stepDefinitions.ServicesWeatherStpeDef.calling_Weather_API_to_get_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.launch_NDTV_weather_website_and_enter_city(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 304000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Verify if weather data is getting fetched from the API",
+            "line": 24,
+            "name": "Retrive the weather data from the UI",
             "match": {
-              "location": "stepDefinitions.ServicesWeatherStpeDef.verify_if_weather_data_is_getting_fetched_from_the_API()"
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.retrive_the_weather_data_from_the_UI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7724000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Call Weather API and fetch all the weather details \"baseURI\",\"endPoint\",\"apiKey\",\"city1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"baseURI\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"endPoint\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"apiKey\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"city1\"",
+                  "offset": 81
+                }
+              ],
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.call_Weather_API_and_fetch_all_the_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1337000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify if the City retrived from UI and Service is matching",
+            "match": {
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_City_retrived_from_UI_and_Service_is_matching()"
             },
             "keyword": "Then "
           }
@@ -59,67 +115,114 @@
             "name": "@RegressionSuite"
           },
           {
-            "name": "@SeriveTest1"
-          },
-          {
-            "name": "@positive"
+            "name": "@Comparator"
           }
         ]
       },
       {
-        "start_timestamp": "2020-10-01T11:20:28.809Z",
-        "line": 22,
-        "name": "To check if weather data is present for the provided input city",
+        "start_timestamp": "2020-10-02T01:11:29.937Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6345000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Comparing City from UI with City received from Service with provided variance",
         "description": "",
-        "id": "weather-data-testing-scenarios-for-services;to-check-if-weather-data-is-present-for-the-provided-input-city;;2",
+        "id": "compare-data-received-from-ui-and-response-received-from-service;comparing-city-from-ui-with-city-received-from-service-with-provided-variance;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1059000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 818000000,
+              "duration": 4081000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Calling Weather API to get weather details \"baseURI\",\"endPoint\",\"apiKey\",\"Pune\"",
+            "line": 23,
+            "name": "Launch NDTV weather website \"url\" and enter city \"city2\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"baseURI\"",
-                  "offset": 43
+                  "val": "\"url\"",
+                  "offset": 28
                 },
                 {
-                  "val": "\"endPoint\"",
-                  "offset": 53
-                },
-                {
-                  "val": "\"apiKey\"",
-                  "offset": 64
-                },
-                {
-                  "val": "\"Pune\"",
-                  "offset": 73
+                  "val": "\"city2\"",
+                  "offset": 49
                 }
               ],
-              "location": "stepDefinitions.ServicesWeatherStpeDef.calling_Weather_API_to_get_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.launch_NDTV_weather_website_and_enter_city(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 703000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "Verify status code should be \"200\"",
+            "line": 24,
+            "name": "Retrive the weather data from the UI",
+            "match": {
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.retrive_the_weather_data_from_the_UI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1846000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Call Weather API and fetch all the weather details \"baseURI\",\"endPoint\",\"apiKey\",\"city2\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"200\"",
-                  "offset": 29
+                  "val": "\"baseURI\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"endPoint\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"apiKey\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"city2\"",
+                  "offset": 81
                 }
               ],
-              "location": "stepDefinitions.ServicesWeatherStpeDef.verify_status_code_should_be(java.lang.String)"
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.call_Weather_API_and_fetch_all_the_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify if the City retrived from UI and Service is matching",
+            "match": {
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_City_retrived_from_UI_and_Service_is_matching()"
             },
             "keyword": "Then "
           }
@@ -129,19 +232,133 @@
             "name": "@RegressionSuite"
           },
           {
-            "name": "@SeriveTest2"
+            "name": "@Comparator"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-02T01:11:44.017Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6373000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUP(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Comparing City from UI with City received from Service with provided variance",
+        "description": "",
+        "id": "compare-data-received-from-ui-and-response-received-from-service;comparing-city-from-ui-with-city-received-from-service-with-provided-variance;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1005000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3950000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Launch NDTV weather website \"url\" and enter city \"city3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"city3\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.launch_NDTV_weather_website_and_enter_city(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@positive"
+            "result": {
+              "duration": 328000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Retrive the weather data from the UI",
+            "match": {
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.retrive_the_weather_data_from_the_UI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1897000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Call Weather API and fetch all the weather details \"baseURI\",\"endPoint\",\"apiKey\",\"city3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"baseURI\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"endPoint\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"apiKey\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"city3\"",
+                  "offset": 81
+                }
+              ],
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.call_Weather_API_and_fetch_all_the_weather_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify if the City retrived from UI and Service is matching",
+            "match": {
+              "location": "stepDefinitions.ComparatorUIandServiceStepDef.verify_if_the_City_retrived_from_UI_and_Service_is_matching()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionSuite"
+          },
+          {
+            "name": "@Comparator"
           }
         ]
       }
     ],
-    "name": "Weather data Testing Scenarios for Services",
+    "name": "Compare Data received from UI and response received from Service",
     "description": "",
-    "id": "weather-data-testing-scenarios-for-services",
+    "id": "compare-data-received-from-ui-and-response-received-from-service",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/ServiceWeatherComparator.feature",
+    "uri": "file:src/test/java/features/ComparatorUIandService.feature",
     "tags": [
       {
         "name": "@RegressionSuite",

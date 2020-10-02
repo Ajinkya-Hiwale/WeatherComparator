@@ -38,8 +38,11 @@ public class ServiceWeatherPage {
 		RestAssured.reset();
 		RestAssured.useRelaxedHTTPSValidation();
 
-		Response res = RestAssured.given().baseUri(baseURI).queryParam("appid", apiKey).queryParam("q", city).when()
-				.get(endpoint).then().extract().response();
+		Response res = RestAssured.given()
+				 .baseUri(baseURI)
+				.queryParam("appid", apiKey)
+				.queryParam("q", city).when()
+			    .get(endpoint).then().extract().response();
 		return res;
 
 		// WeatherResponse we=utility.unmarshallingResponse(res,WeatherResponse.class);
