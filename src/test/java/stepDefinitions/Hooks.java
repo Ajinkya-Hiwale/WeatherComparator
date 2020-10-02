@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 
  */
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,40 +22,56 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
+public class Hooks extends TestBase {
 
-public class Hooks extends TestBase{
-
 	
-	
-	
+	Logger log=Hooks.logger;
 	public Hooks() throws IOException {
 		super();
-		
+
 	}
 
 	Scenario scenario;
 	public TestBase testbase;
 
-	@Before("@Comparator")
+	@Before("@ComparatorUIandService")
 	public void setUP(Scenario scenario) throws Throwable {
-
+		log.info("Launching Browser..");
 		getDriver();
-		
-		this.scenario=scenario;
-		System.out.println("Scenario name is "+scenario.getName());
-		
+
+		this.scenario = scenario;
+		log.info("Scenario name is " + scenario.getName());
 
 	}
 
-	@After("@Comparator")
-	public void tearDown() {
-//		scenario.write("End of the test");
-//		//if (Scenario.isFailed())
-//		{
-//			scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
-//		}
-		
-		//driver.close();
+	@After("@ComparatorUIandService")
+	public void tearDown() throws InterruptedException {
+		if (scenario.isFailed()) {
+			final byte[] screens = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			 //scenario.embed(screens,"image/png");
+		}
+		Thread.sleep(1000);
+		log.info("Closing Browser..");
+		driver.quit();
+	}
+
+	@Before("@UITest")
+	public void setUP2(Scenario scenario) throws Throwable {
+		log.info("Launching Browser..");
+		getDriver();
+
+		this.scenario = scenario;
+		log.info("Scenario name is " + scenario.getName());
+
+	}
+
+	@After("@UITest")
+	public void tearDown2() {
+		if (scenario.isFailed()) {
+			final byte[] screens = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			 //scenario.embed(screens,"image/png");
+		}
+		log.info("Closing Browser..");
 		driver.quit();
 	}
 

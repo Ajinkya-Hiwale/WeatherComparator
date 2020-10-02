@@ -16,59 +16,58 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+public class TestBase {
 
-	
-	public class TestBase {
-		
-		public static WebDriver driver;
-		public static String propertyfile="TestData.properties";
-		public File src;
-		public FileInputStream fis;
-		public static Properties prop;
-		
-		public TestBase() throws IOException
-		{
-			 src=new File(propertyfile);
-			 fis=new FileInputStream(src);
-			 prop=new Properties();
-			 
-			 prop.load(fis);
-			 
-			 	 
-		}
-		
-		public static void getDriver()
-		{
-			if(prop.getProperty("browser").equals("chrome"))
-			{
-				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir") + "\\src\\main\\java\\driver\\chromedriver.exe");
-//				ChromeOptions options = new ChromeOptions();
-//				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-//				 driver=new ChromeDriver(options);
-				
-				driver = new ChromeDriver();
-			}
-			else
-				if(prop.getProperty("browser").equals("firefox"))
-				{
-					System.setProperty("webdriver.gecko.driver",
-							System.getProperty("user.dir") + "\\src\\main\\java\\driver\\geckodriver.exe");
-					
-					driver = new FirefoxDriver();
-				}
-			driver.manage().window().maximize();
-			//driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-			
-			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		
-			
-		}
-		
-		public static String getPropertyValue(String key)
-		{
-			return prop.getProperty(key);
-		}
+	public static WebDriver driver;
+	public static String propertyfile = "TestData.properties";
+	public File src;
+	public FileInputStream fis;
+	public static Properties prop;
+	public static Logger logger;
+
+	public TestBase() throws IOException {
+		src = new File(propertyfile);
+		fis = new FileInputStream(src);
+		prop = new Properties();
+
+		prop.load(fis);
+
+		logger = Logger.getLogger("logg");
+		PropertyConfigurator.configure("Log4j.properties");
 
 	}
+
+	/*
+	 * Setting up webdriver
+	 * 
+	 */
+
+	public static void getDriver() {
+		if (prop.getProperty("browser").equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\src\\main\\java\\driver\\chromedriver.exe");
+
+			driver = new ChromeDriver();
+		} else if (prop.getProperty("browser").equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\main\\java\\driver\\geckodriver.exe");
+
+			driver = new FirefoxDriver();
+		}
+		driver.manage().window().maximize();
+
+		driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
+
+		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+
+	}
+
+	/*
+	 * Method to get values from the property file
+	 */
+
+	public static String getPropertyValue(String key) {
+		return prop.getProperty(key);
+	}
+
+}

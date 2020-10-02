@@ -1,10 +1,10 @@
 @RegressionSuite
 Feature: Compare Data received from UI and response received from Service
 
-#Description:In this feature we are comparing values such as Temperature,Humidity,
-#CityName,Humidity and Weather condition received from UI and Services
+#            Description:In this feature we are comparing values such as Temperature,Humidity,
+#            CityName,Humidity and Weather condition received from UI and Services
 
-@Comparator
+@ComparatorUIandService     @UIandService1
 Scenario Outline: Comparing Temperature from UI with Temprature received from Service with provided variance
 Given Launch NDTV weather website "<url>" and enter city "<city>"
 When Retrive the weather data from the UI
@@ -19,7 +19,7 @@ Examples:
 
 
 
-@Comparator
+@ComparatorUIandService  @UIandService2
 Scenario Outline: Comparing City from UI with City received from Service
 Given Launch NDTV weather website "<url>" and enter city "<city>"
 When Retrive the weather data from the UI
@@ -33,7 +33,7 @@ Examples:
 |url|baseURI|endPoint|apiKey|city3|
 
 
-@Comparator
+@ComparatorUIandService  @UIandService3
 Scenario Outline: Comparing Humidity from UI with Humidity received from Service with provided variance
 Given Launch NDTV weather website "<url>" and enter city "<city>"
 When Retrive the weather data from the UI
@@ -48,7 +48,7 @@ Examples:
 
 
 
-@Comparator
+@ComparatorUIandService  @UIandService4
 Scenario Outline: Comparing Weather condition from UI with Weather condition received from Service
 Given Launch NDTV weather website "<url>" and enter city "<city>"
 When Retrive the weather data from the UI
@@ -63,7 +63,7 @@ Examples:
 
 
 
-@Comparator
+@ComparatorUIandService  @UIandService5
 Scenario Outline: Comparing Wind Speed from UI with Humidity received from Service with provided variance
 Given Launch NDTV weather website "<url>" and enter city "<city>"
 When Retrive the weather data from the UI

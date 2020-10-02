@@ -2,6 +2,7 @@ package pages;
 
 import io.cucumber.core.internal.gherkin.deps.com.google.gson.Gson;
 import io.restassured.RestAssured;
+import io.restassured.http.Headers;
 import pojoClasses.Clouds;
 import pojoClasses.Main;
 import pojoClasses.Coord;
@@ -31,6 +32,12 @@ import baseClass.TestBase;
 public class ServiceWeatherPage {
 
 	Utility utility = new Utility();
+	
+	
+	/*
+	*  GET Request
+	*  This method will return service response base provided parameters
+	*/
 
 	public Response getWeatherDataResponse(String baseURI, String endpoint, String apiKey, String city)
 			throws JsonMappingException, JsonProcessingException {
@@ -43,6 +50,49 @@ public class ServiceWeatherPage {
 				.queryParam("appid", apiKey)
 				.queryParam("q", city).when()
 			    .get(endpoint).then().extract().response();
+		return res;
+
+		
+	}
+	
+	public Response getWeatherDataResponseWithParas(String baseURI, String endpoint, String apiKey, String city)
+			throws JsonMappingException, JsonProcessingException {
+
+		
+		RestAssured.reset();
+		RestAssured.useRelaxedHTTPSValidation();
+		
+		Response res = RestAssured.given()
+				 .baseUri(baseURI)
+				.queryParam("appid", apiKey)
+				.queryParam("q", city)
+				.header("Key","Value")
+				.header("Key","Value")
+				.cookie("Key","Value")
+				.when()
+			    .get(endpoint).then().extract().response();
+		return res;
+
+		
+	}
+	
+	public Response postWeatherDataResponseWithParas(String baseURI, String endpoint, String apiKey, String city)
+			throws JsonMappingException, JsonProcessingException {
+
+		
+		RestAssured.reset();
+		RestAssured.useRelaxedHTTPSValidation();
+		
+		Response res = RestAssured.given()
+				 .baseUri(baseURI)
+				.queryParam("appid", apiKey)
+				.queryParam("q", city)
+				.header("Key","Value")
+				.header("Key","Value")
+				.cookie("Key","Value")
+				.body("body")
+				.when()
+			    .post(endpoint).then().extract().response();
 		return res;
 
 		
