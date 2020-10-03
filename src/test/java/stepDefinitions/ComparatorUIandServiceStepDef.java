@@ -77,7 +77,7 @@ public class ComparatorUIandServiceStepDef {
 
 		String cityname = weathermap.get("City");
 		WeatherResponse wr = utility.unmarshallingResponse(response.asString(), WeatherResponse.class);
-		System.out.println("City Name: " + wr.getName());
+		log.info("City Name: " + wr.getName());
 		Assert.assertEquals(cityname, wr.getName(), "City Name is not matching  ");
 	}
 

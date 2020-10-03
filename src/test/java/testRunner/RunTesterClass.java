@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-		features = "C:\\Bench\\WeatherReportingComparator\\src\\test\\java\\features", 
+		features = "src/test/java/features", 
 		glue = "stepDefinitions",
 		monochrome = true,
-		//tags="@SeriveTest",
+		//tags="@ComparatorUIandService",
 		plugin = { "pretty", "html:target/cucumber" }
 
 )

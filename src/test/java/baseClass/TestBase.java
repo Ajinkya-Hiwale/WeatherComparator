@@ -45,7 +45,7 @@ public class TestBase {
 
 	/*
 	 * Setting up webdriver
-	 * Impicit wait set to high as Application was slow
+	 * Impicit wait and pageload time out setup
 	 */
 
 	public static void getDriver() {
@@ -62,9 +62,9 @@ public class TestBase {
 		}
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(prop.getProperty("pageloadtimeout")), TimeUnit.SECONDS);
 
-		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Integer.parseInt(prop.getProperty("implicitwaittimeout")), TimeUnit.SECONDS);
 
 	}
 
