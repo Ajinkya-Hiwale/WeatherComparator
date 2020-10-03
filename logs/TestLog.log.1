@@ -1,231 +1,3 @@
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:30:14 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:30:14 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 457
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":81.63,"lat":21.23},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":303.15,"feels_like":306.75,"temp_min":303.15,"temp_max":303.15,"pressure":1004,"humidity":62},"visibility":4000,"wind":{"speed":1.5,"deg":320},"clouds":{"all":40},"dt":1601644835,"sys":{"type":1,"id":9168,"country":"IN","sunrise":1601598289,"sunset":1601641234},"timezone":19800,"id":1258980,"name":"Raipur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@284990de
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Weather condition from UI with Weather condition received from Service
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 29°C
-INFO main logg --- City: Pune
-INFO main logg --- Weather Condition is Mostly Cloudy
-INFO main logg --- Humidity: 63
-INFO main logg --- Wind:  2.85 
-INFO main logg --- Setting up data to hit weather web service
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:30:31 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 497[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:30:31 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 497
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":297.81,"feels_like":299.65,"temp_min":297.81,"temp_max":297.81,"pressure":1008,"humidity":81,"sea_level":1008,"grnd_level":946},"visibility":10000,"wind":{"speed":3.48,"deg":269},"rain":{"1h":0.96},"clouds":{"all":81},"dt":1601644692,"sys":{"country":"IN","sunrise":1601600111,"sunset":1601643141},"timezone":19800,"id":1259229,"name":"Pune","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@103c97ff
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Weather condition is not matching Expected is [RAIN]  Actual is Mostly Cloudy 
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Weather condition from UI with Weather condition received from Service
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 35°C
-INFO main logg --- City: Ajmer
-INFO main logg --- Weather Condition is Clear
-INFO main logg --- Humidity: 26
-INFO main logg --- Wind:  5.16 
-INFO main logg --- Setting up data to hit weather web service
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Ajmer HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Ajmer HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Ajmer HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:30:50 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 477[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=ajmer[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:30:50 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 477
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=ajmer
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":74.63,"lat":26.45},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"base":"stations","main":{"temp":301.07,"feels_like":299.09,"temp_min":301.07,"temp_max":301.07,"pressure":1005,"humidity":31,"sea_level":1005,"grnd_level":946},"visibility":10000,"wind":{"speed":2.6,"deg":266},"clouds":{"all":0},"dt":1601645450,"sys":{"country":"IN","sunrise":1601600057,"sunset":1601642826},"timezone":19800,"id":1279159,"name":"Ajmer","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1201769d
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Wind Speed from UI with Humidity received from Service with provided variance
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 29°C
-INFO main logg --- City: Pune
-INFO main logg --- Weather Condition is Mostly Cloudy
-INFO main logg --- Humidity: 63
-INFO main logg --- Wind:  2.85 
-INFO main logg --- Setting up data to hit weather web service
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:07 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 497[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:07 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 497
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":297.81,"feels_like":299.65,"temp_min":297.81,"temp_max":297.81,"pressure":1008,"humidity":81,"sea_level":1008,"grnd_level":946},"visibility":10000,"wind":{"speed":3.48,"deg":269},"rain":{"1h":0.96},"clouds":{"all":81},"dt":1601644692,"sys":{"country":"IN","sunrise":1601600111,"sunset":1601643141},"timezone":19800,"id":1259229,"name":"Pune","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@63e4484d
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Wind Speed from UI with Humidity received from Service with provided variance
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 33°C
-INFO main logg --- City: Nagpur
-INFO main logg --- Weather Condition is Humid and Mostly Cloudy
-INFO main logg --- Humidity: 54
-INFO main logg --- Wind:  3.5 
-INFO main logg --- Setting up data to hit weather web service
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
 DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
 DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
 DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
@@ -246,7 +18,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:23 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:31:36 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -258,319 +30,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:23 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 456
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=nagpur
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":79.1,"lat":21.15},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":302.15,"feels_like":305.27,"temp_min":302.15,"temp_max":302.15,"pressure":1005,"humidity":62},"visibility":3000,"wind":{"speed":1.5,"deg":340},"clouds":{"all":20},"dt":1601645107,"sys":{"type":1,"id":9069,"country":"IN","sunrise":1601598895,"sunset":1601641842},"timezone":19800,"id":1262180,"name":"Nagpur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1c7f6e96
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Wind Speed from UI with Humidity received from Service with provided variance
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 32°C
-INFO main logg --- City: Raipur
-INFO main logg --- Weather Condition is Overcast
-INFO main logg --- Humidity: 54
-INFO main logg --- Wind:  2.61 
-INFO main logg --- Setting up data to hit weather web service
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:40 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:40 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 457
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":81.63,"lat":21.23},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":303.15,"feels_like":306.75,"temp_min":303.15,"temp_max":303.15,"pressure":1004,"humidity":62},"visibility":4000,"wind":{"speed":1.5,"deg":320},"clouds":{"all":40},"dt":1601645500,"sys":{"type":1,"id":9168,"country":"IN","sunrise":1601598289,"sunset":1601641234},"timezone":19800,"id":1258980,"name":"Raipur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1999149e
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Setting up data to hit weather web service
-INFO main logg --- Calling NDTV web service to get weather data
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:43 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 497[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:43 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 497
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":297.81,"feels_like":299.65,"temp_min":297.81,"temp_max":297.81,"pressure":1008,"humidity":81,"sea_level":1008,"grnd_level":946},"visibility":10000,"wind":{"speed":3.48,"deg":269},"rain":{"1h":0.96},"clouds":{"all":81},"dt":1601645336,"sys":{"country":"IN","sunrise":1601600111,"sunset":1601643141},"timezone":19800,"id":1259229,"name":"Pune","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@45d7495e
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Setting up data to hit weather web service
-INFO main logg --- Calling NDTV web service to get weather data
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:43 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=nagpur[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:43 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 456
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=nagpur
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":79.1,"lat":21.15},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":302.15,"feels_like":305.27,"temp_min":302.15,"temp_max":302.15,"pressure":1005,"humidity":62},"visibility":3000,"wind":{"speed":1.5,"deg":340},"clouds":{"all":20},"dt":1601645107,"sys":{"type":1,"id":9069,"country":"IN","sunrise":1601598895,"sunset":1601641842},"timezone":19800,"id":1262180,"name":"Nagpur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2499b971
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Setting up data to hit weather web service
-INFO main logg --- Calling NDTV web service to get weather data
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:44 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:44 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 457
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":81.63,"lat":21.23},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":303.15,"feels_like":306.75,"temp_min":303.15,"temp_max":303.15,"pressure":1004,"humidity":62},"visibility":4000,"wind":{"speed":1.5,"deg":320},"clouds":{"all":40},"dt":1601645500,"sys":{"type":1,"id":9168,"country":"IN","sunrise":1601598289,"sunset":1601641234},"timezone":19800,"id":1258980,"name":"Raipur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58e03769
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Setting up data to hit weather web service
-INFO main logg --- Calling NDTV web service to get weather data
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:45 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 497[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:45 GMT
-DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 497
-DEBUG main org.apache.http.headers --- << Connection: keep-alive
-DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
-DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
-DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-INFO main logg --- Setting up data to hit weather web service
-INFO main logg --- Calling NDTV web service to get weather data
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
-DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
-DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
-DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
-DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
-DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
-DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
-DEBUG main org.apache.http.headers --- >> Accept: */*
-DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
-DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
-DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
-DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:45 GMT[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=nagpur[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "[\r][\n]"
-DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:45 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:31:36 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 456
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -606,7 +66,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:46 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:31:38 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -617,34 +77,22 @@ DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST
 DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54205<->178.128.25.248:443 closed
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:46 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:31:38 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 457
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54223<->178.128.25.248:443 closed
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
 DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54224<->178.128.25.248:443 closed
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54225<->178.128.25.248:443 closed
 DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54226<->178.128.25.248:443 closed
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54227<->178.128.25.248:443 closed
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:53987<->178.128.25.248:443 closed
 INFO main logg --- Setting up data to hit weather web service
 INFO main logg --- Calling NDTV web service to get weather data
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:54098<->178.128.25.248:443 closed
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:53737<->178.128.25.248:443 closed
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:53864<->178.128.25.248:443 closed
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:53530<->178.128.25.248:443 closed
 DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:53635<->178.128.25.248:443 closed
 DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
 DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
 DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
@@ -666,9 +114,9 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:47 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:31:46 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 497[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 486[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
@@ -678,9 +126,9 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:47 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:31:46 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 497
+DEBUG main org.apache.http.headers --- << Content-Length: 486
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
 DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
@@ -715,7 +163,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:47 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:31:48 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -727,7 +175,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:47 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:31:48 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 456
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -764,7 +212,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:48 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:31:59 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -776,7 +224,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:48 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:31:59 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 457
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -813,7 +261,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 404 Not Found[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:49 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:32:07 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 40[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -825,7 +273,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 404 Not Found
 DEBUG main org.apache.http.headers --- << HTTP/1.1 404 Not Found
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:49 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:32:07 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 40
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -861,7 +309,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 404 Not Found[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:50 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:32:16 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 40[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -873,7 +321,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 404 Not Found
 DEBUG main org.apache.http.headers --- << HTTP/1.1 404 Not Found
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:50 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:32:16 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 40
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -909,7 +357,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 400 Bad Request[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:31:50 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:32:27 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 44[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -921,7 +369,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 400 Bad Request
 DEBUG main org.apache.http.headers --- << HTTP/1.1 400 Bad Request
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:31:50 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:32:27 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 44
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -932,52 +380,8 @@ DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POS
 DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if weather data is present for the provided input city
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 29°C
-INFO main logg --- City: Pune
-INFO main logg --- Weather Condition is Mostly Cloudy
-INFO main logg --- Humidity: 63
-INFO main logg --- Wind:  2.85 
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if weather data is present for the provided input city
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 33°C
-INFO main logg --- City: Nagpur
-INFO main logg --- Weather Condition is Humid and Mostly Cloudy
-INFO main logg --- Humidity: 54
-INFO main logg --- Wind:  3.5 
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if weather data is present for the provided input city
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 32°C
-INFO main logg --- City: Raipur
-INFO main logg --- Weather Condition is Overcast
-INFO main logg --- Humidity: 54
-INFO main logg --- Wind:  2.61 
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
-INFO main logg --- Launching Website...
-INFO main logg --- No Record Found, Try again.
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
-INFO main logg --- Launching Website...
-INFO main logg --- No Record Found, Try again.
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
-INFO main logg --- Launching Website...
-INFO main logg --- No Record Found, Try again.
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
-INFO main logg --- Launching Website...
 INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
 DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
 DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
@@ -1001,9 +405,9 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:48:12 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:05 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 483[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 486[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
@@ -1013,9 +417,9 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:48:12 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:05 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 483
+DEBUG main org.apache.http.headers --- << Content-Length: 486
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
 DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
@@ -1024,14 +428,11 @@ DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POS
 DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"base":"stations","main":{"temp":297.32,"feels_like":299.46,"temp_min":297.32,"temp_max":297.32,"pressure":1008,"humidity":81,"sea_level":1008,"grnd_level":946},"visibility":10000,"wind":{"speed":2.71,"deg":275},"clouds":{"all":70},"dt":1601645975,"sys":{"country":"IN","sunrise":1601600111,"sunset":1601643141},"timezone":19800,"id":1259229,"name":"Pune","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3a543f31
+DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":298.39,"feels_like":301.19,"temp_min":298.39,"temp_max":298.39,"pressure":1010,"humidity":71,"sea_level":1010,"grnd_level":948},"visibility":10000,"wind":{"speed":1.01,"deg":275},"clouds":{"all":44},"dt":1601695625,"sys":{"country":"IN","sunrise":1601686523,"sunset":1601729490},"timezone":19800,"id":1259229,"name":"Pune","cod":200}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3f2049b6
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
-INFO main logg --- Launching Website...
 INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
 DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
 DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
@@ -1055,7 +456,7 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:48:42 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:06 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
@@ -1067,7 +468,7 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:48:42 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:06 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
 DEBUG main org.apache.http.headers --- << Content-Length: 456
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
@@ -1078,25 +479,62 @@ DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POS
 DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
 DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":79.1,"lat":21.15},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":302.15,"feels_like":305.27,"temp_min":302.15,"temp_max":302.15,"pressure":1005,"humidity":62},"visibility":3000,"wind":{"speed":1.5,"deg":340},"clouds":{"all":20},"dt":1601646522,"sys":{"type":1,"id":9069,"country":"IN","sunrise":1601598895,"sunset":1601641842},"timezone":19800,"id":1262180,"name":"Nagpur","cod":200}"
-DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@350ec690
+DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":79.1,"lat":21.15},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":298.15,"feels_like":300.29,"temp_min":298.15,"temp_max":298.15,"pressure":1008,"humidity":73},"visibility":3000,"wind":{"speed":2.1,"deg":330},"clouds":{"all":40},"dt":1601695544,"sys":{"type":1,"id":9069,"country":"IN","sunrise":1601685312,"sunset":1601728187},"timezone":19800,"id":1262180,"name":"Nagpur","cod":200}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6831d8fd
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
-INFO main logg --- Closing Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Launching Browser..
-DEBUG Finalizer org.apache.http.impl.conn.DefaultClientConnection --- Connection 0.0.0.0:55346<->178.128.25.248:443 closed
-INFO main logg --- Scenario name is Comparing City from UI with City received from Service
-INFO main logg --- Launching Website...
-INFO main logg --- Launching Browser..
-INFO main logg --- Launching Browser..
-INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
-INFO main logg --- Launching Website...
-INFO main logg --- Temperature: 29°C
-INFO main logg --- City: Pune
-INFO main logg --- Weather Condition is Mostly Cloudy
-INFO main logg --- Humidity: 63
-INFO main logg --- Wind:  2.85 
 INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:08 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:08 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 457
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG main org.apache.http.wire ---  << "{"coord":{"lon":81.63,"lat":21.23},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}],"base":"stations","main":{"temp":299.15,"feels_like":302.86,"temp_min":299.15,"temp_max":299.15,"pressure":1007,"humidity":83},"visibility":2000,"wind":{"speed":2.1,"deg":340},"clouds":{"all":75},"dt":1601695696,"sys":{"type":1,"id":9168,"country":"IN","sunrise":1601684706,"sunset":1601727578},"timezone":19800,"id":1258980,"name":"Raipur","cod":200}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1deb2c43
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Connection can be kept alive indefinitely
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
 DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
 DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
@@ -1120,9 +558,9 @@ DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (J
 DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
 DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Date: Fri, 02 Oct 2020 13:53:21 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:10 GMT[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-DEBUG main org.apache.http.wire ---  << "Content-Length: 483[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 486[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
 DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
@@ -1132,11 +570,614 @@ DEBUG main org.apache.http.wire ---  << "[\r][\n]"
 DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
 DEBUG main org.apache.http.headers --- << Server: openresty
-DEBUG main org.apache.http.headers --- << Date: Fri, 02 Oct 2020 13:53:21 GMT
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:10 GMT
 DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
-DEBUG main org.apache.http.headers --- << Content-Length: 483
+DEBUG main org.apache.http.headers --- << Content-Length: 486
 DEBUG main org.apache.http.headers --- << Connection: keep-alive
 DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
 DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:11 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=nagpur[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:11 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 456
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=nagpur
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:12 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:12 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 457
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Pune HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:13 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 486[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=pune[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:13 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 486
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=pune
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- application/json; charset=utf-8
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nagpur HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:15 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 456[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=nagpur[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:15 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 456
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=nagpur
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- application/json; charset=utf-8
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Raipur HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:18 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 457[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=raipur[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:18 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 457
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=raipur
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- application/json; charset=utf-8
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=amt HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=amt HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=amt HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 404 Not Found[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:25 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 40[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=amt[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 404 Not Found
+DEBUG main org.apache.http.headers --- << HTTP/1.1 404 Not Found
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:25 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 40
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=amt
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nhu HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nhu HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q=Nhu HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 404 Not Found[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:29 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 40[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=nhu[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 404 Not Found
+DEBUG main org.apache.http.headers --- << HTTP/1.1 404 Not Found
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:29 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 40
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=nhu
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager --- Get connection for route {s}->https://api.openweathermap.org:443
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator --- Connecting to api.openweathermap.org:443
+DEBUG main org.apache.http.client.protocol.RequestAddCookies --- CookieSpec selected: ignoreCookies
+DEBUG main org.apache.http.client.protocol.RequestAuthCache --- Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication --- Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication --- Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Sending request: GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q= HTTP/1.1
+DEBUG main org.apache.http.wire ---  >> "GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q= HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept: */*[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Host: api.openweathermap.org[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire ---  >> "[\r][\n]"
+DEBUG main org.apache.http.headers --- >> GET /data/2.5/weather?appid=7fe67bf08c80ded756e598d6f8fedaea&q= HTTP/1.1
+DEBUG main org.apache.http.headers --- >> Accept: */*
+DEBUG main org.apache.http.headers --- >> Host: api.openweathermap.org
+DEBUG main org.apache.http.headers --- >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers --- >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+DEBUG main org.apache.http.headers --- >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire ---  << "HTTP/1.1 400 Bad Request[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Server: openresty[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Date: Sat, 03 Oct 2020 03:33:46 GMT[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Content-Length: 44[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Connection: keep-alive[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "X-Cache-Key: /data/2.5/weather?q=[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Credentials: true[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "Access-Control-Allow-Methods: GET, POST[\r][\n]"
+DEBUG main org.apache.http.wire ---  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection --- Receiving response: HTTP/1.1 400 Bad Request
+DEBUG main org.apache.http.headers --- << HTTP/1.1 400 Bad Request
+DEBUG main org.apache.http.headers --- << Server: openresty
+DEBUG main org.apache.http.headers --- << Date: Sat, 03 Oct 2020 03:33:46 GMT
+DEBUG main org.apache.http.headers --- << Content-Type: application/json; charset=utf-8
+DEBUG main org.apache.http.headers --- << Content-Length: 44
+DEBUG main org.apache.http.headers --- << Connection: keep-alive
+DEBUG main org.apache.http.headers --- << X-Cache-Key: /data/2.5/weather?q=
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Origin: *
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Credentials: true
+DEBUG main org.apache.http.headers --- << Access-Control-Allow-Methods: GET, POST
+DEBUG main org.apache.http.impl.client.DefaultHttpClient --- Connection can be kept alive indefinitely
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsing response as: application/json; charset=utf-8
+DEBUG main io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder --- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main org.apache.http.impl.client.DefaultHttpClient --- I/O exception (java.net.SocketException) caught when connecting to {s}->https://api.openweathermap.org:443: Connection reset
+INFO main org.apache.http.impl.client.DefaultHttpClient --- Retrying connect to {s}->https://api.openweathermap.org:443
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Calling NDTV web service to get weather data
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 25°C
+INFO main logg --- City: Pune
+INFO main logg --- Weather Condition is Partly Cloudy
+INFO main logg --- Humidity: 86
+INFO main logg --- Wind:  1.62 
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 27°C
+INFO main logg --- City: Nagpur
+INFO main logg --- Weather Condition is Clear
+INFO main logg --- Humidity: 70
+INFO main logg --- Wind:  2.47 
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if weather data is present for the provided input city
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 28°C
+INFO main logg --- City: Raipur
+INFO main logg --- Weather Condition is Humid and Partly Cloudy
+INFO main logg --- Humidity: 77
+INFO main logg --- Wind:  2.55 
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- No Record Found, Try again.
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- No Record Found, Try again.
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is To check if get error message upon entering wrong city name
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 25°C
+INFO main logg --- City: Pune
+INFO main logg --- Weather Condition is Partly Cloudy
+INFO main logg --- Humidity: 86
+INFO main logg --- Wind:  1.62 
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Response is {"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"base":"stations","main":{"temp":300.15,"feels_like":303.18,"temp_min":300.15,"temp_max":300.15,"pressure":1010,"humidity":65,"sea_level":1010,"grnd_level":949},"visibility":10000,"wind":{"speed":0.85,"deg":314},"clouds":{"all":33},"dt":1601698749,"sys":{"country":"IN","sunrise":1601686523,"sunset":1601729490},"timezone":19800,"id":1259229,"name":"Pune","cod":200}
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 27°C
+INFO main logg --- City: Nagpur
+INFO main logg --- Weather Condition is Clear
+INFO main logg --- Humidity: 70
+INFO main logg --- Wind:  2.47 
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- Response is {"coord":{"lon":79.1,"lat":21.15},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":300.15,"feels_like":302.72,"temp_min":300.15,"temp_max":300.15,"pressure":1009,"humidity":65},"visibility":3000,"wind":{"speed":1.5,"deg":310},"clouds":{"all":40},"dt":1601698989,"sys":{"type":1,"id":9069,"country":"IN","sunrise":1601685312,"sunset":1601728187},"timezone":19800,"id":1262180,"name":"Nagpur","cod":200}
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 27°C
+INFO main logg --- City: Pune
+INFO main logg --- Weather Condition is Humid and Partly Cloudy
+INFO main logg --- Humidity: 78
+INFO main logg --- Wind:  1.98 
+INFO main logg --- Setting up data to hit weather web service
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Closing Browser..
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Launching Browser..
+INFO main logg --- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+INFO main logg --- Scenario name is Comparing Temperature from UI with Temprature received from Service with provided variance
+INFO main logg --- Launching Website...
+INFO main logg --- Temperature: 29°C

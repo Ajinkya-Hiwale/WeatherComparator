@@ -24,6 +24,12 @@ public class TestBase {
 	public FileInputStream fis;
 	public static Properties prop;
 	public static Logger logger;
+	
+	
+	/*
+	 * Setting up propery files and Logger
+	 * 
+	 */
 
 	public TestBase() throws IOException {
 		src = new File(propertyfile);
@@ -39,7 +45,7 @@ public class TestBase {
 
 	/*
 	 * Setting up webdriver
-	 * 
+	 * Impicit wait set to high as Application was slow
 	 */
 
 	public static void getDriver() {
@@ -56,9 +62,9 @@ public class TestBase {
 		}
 		driver.manage().window().maximize();
 
-		driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 
-		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 
 	}
 

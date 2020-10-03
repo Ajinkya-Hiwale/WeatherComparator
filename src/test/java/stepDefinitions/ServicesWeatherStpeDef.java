@@ -33,6 +33,7 @@ public class ServicesWeatherStpeDef extends TestBase {
 
 	@Given("Setting up Rest APi ELements like {string},{string},{string},{string}")
 	public void setting_up_Rest_APi_ELements_like(String baseuri, String endPoint, String apikeyy, String cityy) {
+		
 		log.info("Setting up data to hit weather web service");
 		baseURI = TestBase.getPropertyValue(baseuri);
 		endpoint = TestBase.getPropertyValue(endPoint);

@@ -4,6 +4,9 @@ Feature: Compare Data received from UI and response received from Service
 #            Description:In this feature we are comparing values such as Temperature,Humidity,
 #            CityName,Humidity and Weather condition received from UI and Services
 
+#			Note:Here some test cases will fail if variance logic(mention in TestData.proprties) is
+#           less than the difference between value retrived from UI and WebService
+
 @ComparatorUIandService     @UIandService1
 Scenario Outline: Comparing Temperature from UI with Temprature received from Service with provided variance
 Given Launch NDTV weather website "<url>" and enter city "<city>"

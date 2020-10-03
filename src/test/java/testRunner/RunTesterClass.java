@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "C:\\Bench\\WeatherReportingComparator\\src\\test\\java\\features", 
 		glue = "stepDefinitions",
 		monochrome = true,
+		//tags="@SeriveTest",
 		plugin = { "pretty", "html:target/cucumber" }
 
 )

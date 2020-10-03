@@ -37,6 +37,7 @@ public class Hooks extends TestBase {
 	@Before("@ComparatorUIandService")
 	public void setUP(Scenario scenario) throws Throwable {
 		log.info("Launching Browser..");
+		log.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ");
 		getDriver();
 
 		this.scenario = scenario;
@@ -51,6 +52,7 @@ public class Hooks extends TestBase {
 			 //scenario.embed(screens,"image/png");
 		}
 		Thread.sleep(1000);
+		log.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ");
 		log.info("Closing Browser..");
 		driver.quit();
 	}
@@ -58,6 +60,7 @@ public class Hooks extends TestBase {
 	@Before("@UITest")
 	public void setUP2(Scenario scenario) throws Throwable {
 		log.info("Launching Browser..");
+		log.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ");
 		getDriver();
 
 		this.scenario = scenario;
@@ -71,6 +74,7 @@ public class Hooks extends TestBase {
 			final byte[] screens = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			 //scenario.embed(screens,"image/png");
 		}
+		log.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ending Test>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ");
 		log.info("Closing Browser..");
 		driver.quit();
 	}

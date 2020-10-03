@@ -58,6 +58,7 @@ public class ComparatorUIandServiceStepDef {
 		apikey = TestBase.getPropertyValue(apikeyy);
 		city = TestBase.getPropertyValue(cityy);
 		response = service.getWeatherDataResponse(baseURI, endpoint, apikey, city);
+		//log.info("Response is "+response.getBody().asString());
 		
 	}
 

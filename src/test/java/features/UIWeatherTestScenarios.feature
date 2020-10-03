@@ -1,6 +1,10 @@
 @RegressionSuite
 Feature: Weather data Testing Scenarios for NDTV weather UI
 
+		# Description:Validating if we getting all the data such as Temperature,Humidity,
+		# weather condition,wind speed from the UI upon providing valid input city and
+		# getting expected error message when enter invalid city name
+
 @UITest @UITest1 
 Scenario Outline: To check if weather data is present for the provided input city
 Given Launch NDTV weather website "<url>"
@@ -24,7 +28,7 @@ Then verify error message when city is not valid "<error_msg>"
 Examples:
 |url|city|error_msg|
 |url|invalidcity1|errormsg|
-|url|invalidcity1|errormsg|
+|url|invalidcity2|errormsg|
 |url|invalidcity1|errormsg|
 
 	
